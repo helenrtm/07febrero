@@ -14,17 +14,11 @@ public class hotel_logic {
         hotpa = new hotel_page(driver);
     }
 
-
     public void selDestinos (String destino) throws InterruptedException {
         Driver.implicitwait2();
         hotpa.setSeldestinou(destino);
         Driver.implicitwait2();
-
-
     }
-
-
-
     public void selcheck(String fechini){
         hotpa.setSelcheckin(fechini);
 
@@ -33,8 +27,19 @@ public class hotel_logic {
         hotpa.setSelccheckout(fechout);
     }
 
+    public void valoradulto(Integer valorA) throws InterruptedException{
+        Driver.implicitwait2();
+        hotpa.setValoradul(valorA);
+    }
+
+    public void valorninos(Integer valorN ) throws InterruptedException{
+        Driver.implicitwait2();
+        hotpa.setValornino(valorN);
+    }
+
     public void buscar (){
         hotpa.setBtnsearch();
     }
+
 
 }

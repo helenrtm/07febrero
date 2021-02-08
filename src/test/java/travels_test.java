@@ -36,11 +36,13 @@ public void ventanas ()throws InterruptedException {
      Driver.scroll(200);
 
      hotlog1.selDestinos("TRIA HOTEL I");
-     Driver.implicitwait2();
+     //Driver.implicitwait2();
      hotlog1.selcheck("09/02/2021");
-     Driver.implicitwait2();
+     //Driver.implicitwait2();
      hotlog1.selchkout("15/02/2021");
      Driver.implicitwait2();
+     hotlog1.valoradulto(2);
+     hotlog1.valorninos(0);
      hotlog1.buscar();
      Driver.implicitwait2();
      Driver.scroll(2000);
